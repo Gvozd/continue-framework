@@ -68,7 +68,7 @@ Profiles are independent — any combination works. Each lives in `.opencode/tec
 
 ```bash
 # 1. Copy the framework into your project
-cp -r continue-framework/.opencode continue-framework/CLAUDE.md continue-framework/ProductSpecification your-project/
+cp -r continue-framework/.opencode continue-framework/AGENTS.md continue-framework/ProductSpecification your-project/
 cd your-project
 
 # 2. Pick your stack in ProductSpecification/technology.md
@@ -96,7 +96,7 @@ First run triggers the spec phase (`/interview` → `/story` → `/mockups` → 
 └── tech/      15 directories — pluggable technology profiles
 ```
 
-302 prompt files total. Every AI decision traces back to a specific rule, checklist item, or template. Start with `CLAUDE.md` and `.opencode/rules/workflow.md` to understand the loop; `.opencode/skills/continue/SKILL.md` is the dispatcher.
+302 prompt files total. Every AI decision traces back to a specific rule, checklist item, or template. Start with `AGENTS.md` and `.opencode/rules/workflow.md` to understand the loop; `.opencode/skills/continue/SKILL.md` is the dispatcher.
 
 ## Limitations
 

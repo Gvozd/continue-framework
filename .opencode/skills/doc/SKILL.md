@@ -40,7 +40,7 @@ Research, API discoveries, and architectural findings get lost across conversati
 **Identify automatically, confirm with user:**
 
 1. **What should reference this doc?** (inbound links)
-   - Search for related story `endpoints.md` files, task `spec.md` files, and `CLAUDE.md` that would benefit from a link to this document.
+   - Search for related story `endpoints.md` files, task `spec.md` files, and `AGENTS.md` that would benefit from a link to this document.
    - Use `Grep` to find files mentioning the key concepts being documented.
    - Propose specific files and the line/section where the link should be added.
 
@@ -62,7 +62,7 @@ Present both lists to the user. They can add/remove entries.
 2. **Update referencing docs** — add links in the files identified in Round 2 (inbound references). Use relative paths. Add links in contextually appropriate sections — don't just append to the end.
 
 3. **Update indexes:**
-   - If a new folder was created → update `ProductSpecification/CLAUDE.md` structure tree
+   - If a new folder was created → update `ProductSpecification/AGENTS.md` structure tree
    - If the doc is in a task folder → no index update needed
 
 4. **Commit** all changes with message: `docs: {short description}`

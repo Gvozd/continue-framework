@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 TDD Framework Template — Clean Architecture backend (multi-module) + frontend + E2E acceptance tests.
 
