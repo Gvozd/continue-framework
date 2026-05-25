@@ -16,14 +16,6 @@ target/
 .env.local
 .env.*.local
 
-# Claude Code local settings
-.opencode/settings.local.json
-.opencode/hooks/hook-log.txt
-.opencode/hooks/test-permission.txt
-
-# Plans (generated during conversations)
-ProductSpecification/plans/
-
 # OS
 .DS_Store
 Thumbs.db
@@ -32,4 +24,3 @@ Desktop.ini
 # Logs
 *.log
 bash.exe.stackdump
-/.opencode/projects/
