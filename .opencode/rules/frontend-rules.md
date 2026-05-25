@@ -65,6 +65,6 @@ Leave simple, self-documenting utilities inline. The test: can a developer under
 
 ## Icons
 
-- ALWAYS use the icon library (see tech binding) -- never write inline SVG paths or elements. Claude generates broken/unrecognizable SVG paths.
+- ALWAYS use the icon library (see tech binding) -- never write inline SVG paths or elements. LLMs generate broken/unrecognizable SVG paths.
 - Use the icon library's components which render correct, tested SVGs.
 - Standard sizes: small for inline text, medium for nav items, large for prominent display.

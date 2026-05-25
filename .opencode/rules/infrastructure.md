@@ -16,8 +16,8 @@ Parallel repo instances with isolated ports. All port configuration flows throug
   - `test-acceptance.sh [backend|frontend]` — exports env vars then runs the build tool
 - **Health checks and curl calls** must read the port first, then check the health endpoint (see tech binding for the specific endpoint path).
 - **If `.env` is missing**, run `infrastructure/scripts/setup-ports.sh` before proceeding.
-- **NEVER kill processes by executable name.** This kills ALL instances system-wide, including other Claude sessions and user tools. To stop a specific service, use the port-based stop scripts or kill only the specific PID you started.
-- **NEVER remove Docker containers you didn't start.** Multiple Claude sessions run in parallel on different repo instances, each with its own infrastructure containers. If `docker ps` shows containers with unexpected suffixes, they belong to another session — leave them alone. Only manage containers matching your own repo index (from `.env`).
-- **NEVER run build daemon stop commands** for unknown processes — they kill ALL daemons system-wide, breaking test runs and backends in parallel Claude sessions.
+- **NEVER kill processes by executable name.** This kills ALL instances system-wide, including other agent sessions and user tools. To stop a specific service, use the port-based stop scripts or kill only the specific PID you started.
+- **NEVER remove Docker containers you didn't start.** Multiple agent sessions run in parallel on different repo instances, each with its own infrastructure containers. If `docker ps` shows containers with unexpected suffixes, they belong to another session — leave them alone. Only manage containers matching your own repo index (from `.env`).
+- **NEVER run build daemon stop commands** for unknown processes — they kill ALL daemons system-wide, breaking test runs and backends in parallel agent sessions.
 
 Config files use fallback patterns. **Syntax differs by file type** — see tech binding for specific syntax per framework.
