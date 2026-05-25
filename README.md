@@ -1,6 +1,6 @@
-# /continue — TDD Framework for Claude Code
+# /continue — TDD Framework for OpenCode
 
-A prompt framework for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) that enforces strict TDD, Clean Architecture, and DDD across the full stack. You type `/continue` and Claude executes the next atomic work unit — write a failing test, implement, refactor, commit — then stops.
+A prompt framework for [OpenCode](https://opencode.ai) that enforces strict TDD, Clean Architecture, and DDD across the full stack. You type `/continue` and OpenCode executes the next atomic work unit — write a failing test, implement, refactor, commit — then stops.
 
 Extracted from a production app built over 3.5 months (25K+ LOC, 1,500 tests, 4,000 commits). The rules and workflows accumulated organically; this repo is the tech-agnostic template.
 
@@ -16,12 +16,12 @@ LLMs write code that compiles but doesn't necessarily work, and without structur
 
 ```
 You: /continue 5
-Claude: > Dispatching red-agent. Live progress: tail -f infrastructure/agent-progress.log
+OpenCode: > Dispatching red-agent. Live progress: tail -f infrastructure/agent-progress.log
         [red-agent → test-review-agent → refactor-agent → commit]
         Step 14/47 done. Next: green-usecase.
 
 You: /continue
-Claude: [picks up where it left off]
+OpenCode: [picks up where it left off]
 ```
 
 `/continue` is the only command you type for day-to-day work. It reads `progress.md`, finds the next `[ ]` step, loads any relevant ADR, dispatches the right sub-agent (`red-agent`, `green-agent`, `refactor-agent`, `coverage-agent`, `test-review-agent`) in context isolation, runs the mandatory gates, commits, and stops. Sub-agents stream milestones to `infrastructure/agent-progress.log` — `tail -f` it in another terminal to watch RED → PREDICT → RUN → PASS unfold live.
@@ -68,7 +68,7 @@ Profiles are independent — any combination works. Each lives in `.opencode/tec
 
 ```bash
 # 1. Copy the framework into your project
-cp -r continue-framework/.opencode continue-framework/AGENTS.md continue-framework/ProductSpecification your-project/
+cp -r continue-framework/.opencode continue-framework/AGENTS.md continue-framework/opencode.json continue-framework/ProductSpecification your-project/
 cd your-project
 
 # 2. Pick your stack in ProductSpecification/technology.md
@@ -79,7 +79,7 @@ cd your-project
 #      browser-testing: selenium
 
 # 3. Start working
-claude
+opencode
 > /continue 1
 ```
 
@@ -100,7 +100,7 @@ First run triggers the spec phase (`/interview` → `/story` → `/mockups` → 
 
 ## Limitations
 
-- **Claude Code only.** Relies on subagents, slash commands, hooks, and tool use. Won't work with other AI coding tools without adaptation.
+- **OpenCode only.** Relies on subagents, slash commands, hooks, and tool use. Won't work with other AI coding tools without adaptation.
 - **Opinionated.** Clean Architecture + DDD + strict TDD. If your project doesn't follow this structure, the framework will fight you.
 - **Learning curve.** 28 skills, 8 agents, 302 prompt files. It takes time to understand what's happening and why.
 - **Context budget.** Rules load every conversation. On smaller context windows this leaves less room for code.
