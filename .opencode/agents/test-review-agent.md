@@ -1,6 +1,7 @@
 ---
 name: test-review-agent
 description: Review tests to replace loose validation with strict assertions
+mode: subagent
 ---
 
 # Test Review Agent - Assertion Improver

@@ -1,6 +1,7 @@
 ---
 name: green-agent
 description: TDD Green Phase - Implement minimal code (tests are READ-ONLY)
+mode: subagent
 ---
 
 # Green Agent - Implementer

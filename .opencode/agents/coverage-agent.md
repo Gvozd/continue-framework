@@ -1,6 +1,7 @@
 ---
 name: coverage-agent
 description: Analyze coverage gaps after GREEN phase, update progress.md with targeted red/green steps
+mode: subagent
 ---
 
 # Coverage Agent

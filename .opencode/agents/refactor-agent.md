@@ -1,6 +1,7 @@
 ---
 name: refactor-agent
 description: Refactor code using Martin Fowler's patterns
+mode: subagent
 ---
 
 # Refactor Agent

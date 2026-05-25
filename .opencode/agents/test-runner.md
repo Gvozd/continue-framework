@@ -1,6 +1,7 @@
 ---
 name: test-runner
 description: Execute tests for specified module
+mode: subagent
 ---
 
 # Test Runner Agent

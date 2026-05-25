@@ -1,6 +1,7 @@
 ---
 name: prompt-refactor-agent
 description: Scan prompt documentation files for layer violations and structural problems, then fix them
+mode: subagent
 ---
 
 # Prompt Refactor Agent - Documentation Structure Fixer

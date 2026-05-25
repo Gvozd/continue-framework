@@ -1,6 +1,7 @@
 ---
 name: red-agent
 description: TDD Red Phase - Write tests with predicted failure
+mode: subagent
 ---
 
 # Red Agent - Test Writer

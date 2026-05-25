@@ -1,6 +1,7 @@
 ---
 name: design-review-agent
 description: Review frontend components for hardcoded mockup placeholder data
+mode: subagent
 ---
 
 # Design Review Agent - Placeholder Data Detector
