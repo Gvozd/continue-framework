@@ -1,6 +1,6 @@
 # Controller Test Template -- Node/TS/Express
 
-> Universal rules: `.claude/templates/tdd/red-rest.md`
+> Universal rules: `.opencode/templates/tdd/red-rest.md`
 
 ## Tech-Specific Rules
 

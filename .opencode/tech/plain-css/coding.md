@@ -1,6 +1,6 @@
 # Plain CSS Conventions
 
-Tech binding for `frontend-rules.md` CSS concerns. Shared section structure: `.claude/templates/coding/coding-sections.md`.
+Tech binding for `frontend-rules.md` CSS concerns. Shared section structure: `.opencode/templates/coding/coding-sections.md`.
 
 ## Styling Approach
 

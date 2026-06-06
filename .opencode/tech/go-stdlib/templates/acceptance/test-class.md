@@ -1,6 +1,6 @@
 # Acceptance Test Template -- Go/stdlib
 
-> Universal structure and rules: `.claude/templates/tdd/red-acceptance.md`
+> Universal structure and rules: `.opencode/templates/tdd/red-acceptance.md`
 
 ## Framework Rules
 

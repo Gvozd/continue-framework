@@ -4,7 +4,7 @@ param(
 )
 
 # Log for debugging
-Add-Content -Path ".claude/hooks/hook-log.txt" -Value "$(Get-Date): $Message"
+Add-Content -Path ".opencode/hooks/hook-log.txt" -Value "$(Get-Date): $Message"
 
 # Play sound
 [System.Media.SystemSounds]::Exclamation.Play()

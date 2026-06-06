@@ -20,7 +20,7 @@ description: Review frontend component for hardcoded mockup placeholder data aft
 
 ## Workflow
 
-1. Load `.claude/agents/design-review-agent.md`
+1. Load `.opencode/agents/design-review-agent.md`
 2. Locate the component TSX file(s) and the mockup HTML
 3. Run the agent's review workflow against the component
 4. Output the review table and verdict
@@ -29,7 +29,7 @@ description: Review frontend component for hardcoded mockup placeholder data aft
 
 | Template | Purpose |
 |----------|---------|
-| `.claude/tech/{browser-testing}/templates/design-review-patterns.md` | Anti-patterns (BAD → GOOD), output format, verdict examples |
+| `.opencode/tech/{browser-testing}/templates/design-review-patterns.md` | Anti-patterns (BAD → GOOD), output format, verdict examples |
 
 ## Gate Behavior
 

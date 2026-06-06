@@ -42,7 +42,7 @@ You MUST complete this phase fully before writing any HTML file.
 
 ## Phase 4: Generate Mockups
 
-Load `.claude/templates/ui/mockup-generation-rules.md` for all generation rules, output location, template usage, format, and completion check.
+Load `.opencode/templates/ui/mockup-generation-rules.md` for all generation rules, output location, template usage, format, and completion check.
 
 ## Phase 5: Screenshots
 
@@ -65,5 +65,5 @@ Report: Screen Plan table, total files, screenshot locations, design decisions, 
 
 ## Templates
 
-- `.claude/templates/ui/mockup-generation-rules.md` — generation rules, format, templates, completion check
-- `.claude/templates/ui/icon-reference.md` — icon name lookup
+- `.opencode/templates/ui/mockup-generation-rules.md` — generation rules, format, templates, completion check
+- `.opencode/templates/ui/icon-reference.md` — icon name lookup

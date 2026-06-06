@@ -32,7 +32,7 @@ If `interview.md` exists, extract:
 
 ### Phase 2: Generate Test Files
 
-Load `.claude/templates/spec/test-spec-format.md` for category formats, ordering principles, and BDD rules.
+Load `.opencode/templates/spec/test-spec-format.md` for category formats, ordering principles, and BDD rules.
 
 Create files in `ProductSpecification/stories/NN-story-name/tests/`:
 

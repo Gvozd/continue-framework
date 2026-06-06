@@ -26,7 +26,7 @@ Optional `--focus` flag restricts the report to classes changed since the last c
 
 ## Action
 
-Delegate to `.claude/agents/coverage-agent.md` which loads `.claude/tech/{backend}/templates/testing/coverage-commands.md` for commands, report format, gap mapping, and remediation.
+Delegate to `.opencode/agents/coverage-agent.md` which loads `.opencode/tech/{backend}/templates/testing/coverage-commands.md` for commands, report format, gap mapping, and remediation.
 
 Steps:
 1. Run tests with coverage (stop if tests fail)
@@ -38,9 +38,9 @@ Steps:
 
 ## Agent
 
-- `.claude/agents/coverage-agent.md` — workflow for gap analysis, reachability classification, progress.md updates
+- `.opencode/agents/coverage-agent.md` — workflow for gap analysis, reachability classification, progress.md updates
 
 ## Templates
 
-- `.claude/templates/testing/coverage-commands.md` — universal workflow: focus mode, module mapping, report format
-- `.claude/tech/{backend}/templates/testing/coverage-commands.md` — tool-specific commands: run, parse, extract
+- `.opencode/templates/testing/coverage-commands.md` — universal workflow: focus mode, module mapping, report format
+- `.opencode/tech/{backend}/templates/testing/coverage-commands.md` — tool-specific commands: run, parse, extract

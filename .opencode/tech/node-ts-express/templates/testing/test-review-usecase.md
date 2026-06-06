@@ -1,6 +1,6 @@
 # Test Review Patterns: Usecase Layer (Node/TypeScript)
 
-TypeScript/Vitest code examples for usecase test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+TypeScript/Vitest code examples for usecase test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## TypeScript-Specific Rules (Usecase)
 

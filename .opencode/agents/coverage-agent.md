@@ -16,7 +16,7 @@ Runs after GREEN phase to find uncovered branches and plan remediation.
 
 ## Workflow
 
-1. **Run coverage for primary module** — load `.claude/tech/{backend}/templates/testing/coverage-commands.md` for tool-specific commands, and `.claude/templates/testing/coverage-commands.md` for universal workflow (focus mode, module mapping, report format)
+1. **Run coverage for primary module** — load `.opencode/tech/{backend}/templates/testing/coverage-commands.md` for tool-specific commands, and `.opencode/templates/testing/coverage-commands.md` for universal workflow (focus mode, module mapping, report format)
 2. **Focus filter — all touched files** — see universal coverage-commands template. If the focus filter returns no classes but the green phase wrote new code with branches, the filter is wrong — investigate.
 3. **Multi-module coverage** — see universal coverage-commands template for module-to-test mapping. For each module OTHER than the primary that has touched files, run that module's coverage too.
 4. **Check results** — if 100% branch coverage on focused classes across all modules → report clean, done
@@ -33,7 +33,7 @@ Runs after GREEN phase to find uncovered branches and plan remediation.
 
 ## Progress Update Format
 
-See `.claude/templates/workflow/coverage-formats.md` for the before/after format of coverage steps in progress.md.
+See `.opencode/templates/workflow/coverage-formats.md` for the before/after format of coverage steps in progress.md.
 
 ## Layer Mapping
 
@@ -44,7 +44,7 @@ Coverage steps use the same layer as the current green phase:
 
 ## Dead Code Marking
 
-See `.claude/templates/workflow/coverage-formats.md` for dead code comment format. The refactor agent will detect and remove these lines.
+See `.opencode/templates/workflow/coverage-formats.md` for dead code comment format. The refactor agent will detect and remove these lines.
 
 ## Rules
 

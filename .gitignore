@@ -17,9 +17,9 @@ target/
 .env.*.local
 
 # Claude Code local settings
-.claude/settings.local.json
-.claude/hooks/hook-log.txt
-.claude/hooks/test-permission.txt
+.opencode/settings.local.json
+.opencode/hooks/hook-log.txt
+.opencode/hooks/test-permission.txt
 
 # Plans (generated during conversations)
 ProductSpecification/plans/
@@ -32,4 +32,4 @@ Desktop.ini
 # Logs
 *.log
 bash.exe.stackdump
-/.claude/projects/
+/.opencode/projects/

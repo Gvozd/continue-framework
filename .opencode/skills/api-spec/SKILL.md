@@ -40,7 +40,7 @@ Generate OpenAPI 3.0.3 specifications for frontend endpoints in a story.
 
 ### Phase 2: Generate Specifications
 
-Load `.claude/templates/spec/api-spec-template.md` for document formats.
+Load `.opencode/templates/spec/api-spec-template.md` for document formats.
 
 Based on story and mockups, identify the **minimum** endpoints needed.
 

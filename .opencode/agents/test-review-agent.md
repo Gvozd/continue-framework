@@ -26,9 +26,9 @@ Review tests to identify and fix loose validations. Replace `contains()` on stru
 
 **Run EVERY check on the test class file. Paste results. Fix violations before reporting.**
 
-See `.claude/templates/workflow/test-review-checklist.md` for the full 26-item checklist with grep patterns, scopes, and fix actions.
+See `.opencode/templates/workflow/test-review-checklist.md` for the full 26-item checklist with grep patterns, scopes, and fix actions.
 
-**Output format:** See `.claude/templates/workflow/test-review-output-format.md` for the filled checklist format to print before reporting results. Fix any violation BEFORE reporting "no issues."
+**Output format:** See `.opencode/templates/workflow/test-review-output-format.md` for the filled checklist format to print before reporting results. Fix any violation BEFORE reporting "no issues."
 
 ## No Deferred Assertions
 
@@ -68,16 +68,16 @@ For every `isNotNull`/`isNotEmpty`/`isNotBlank` found in step 3, classify the va
 
 ## Reference
 
-For universal rules, anti-pattern catalog, and assertion rules, load: `.claude/templates/testing/test-review-patterns.md`
+For universal rules, anti-pattern catalog, and assertion rules, load: `.opencode/templates/testing/test-review-patterns.md`
 
 For tech-specific code examples (BAD/GOOD with language syntax) and assertion improvement tables, load the **layer-specific** file based on the test being reviewed:
 
 | Test location / type | File to load |
 |---------------------|--------------|
-| Usecase tests (usecase module, extends usecase test base) | `.claude/tech/{backend}/templates/testing/test-review-usecase.md` |
-| REST adapter tests (adapters/rest module, web test annotation) | `.claude/tech/{backend}/templates/testing/test-review-rest.md` |
-| H2 adapter tests (adapters/h2 module, persistence test annotation) | `.claude/tech/{backend}/templates/testing/test-review-h2.md` |
-| Acceptance tests (acceptance module, HTTP API tests) | `.claude/tech/{backend}/templates/testing/test-review-acceptance.md` |
-| Other (selenium, email, scheduling, security) | `.claude/tech/{backend}/templates/testing/test-review-other.md` |
+| Usecase tests (usecase module, extends usecase test base) | `.opencode/tech/{backend}/templates/testing/test-review-usecase.md` |
+| REST adapter tests (adapters/rest module, web test annotation) | `.opencode/tech/{backend}/templates/testing/test-review-rest.md` |
+| H2 adapter tests (adapters/h2 module, persistence test annotation) | `.opencode/tech/{backend}/templates/testing/test-review-h2.md` |
+| Acceptance tests (acceptance module, HTTP API tests) | `.opencode/tech/{backend}/templates/testing/test-review-acceptance.md` |
+| Other (selenium, email, scheduling, security) | `.opencode/tech/{backend}/templates/testing/test-review-other.md` |
 
 Load only the file matching the current test's layer — not all five.

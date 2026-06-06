@@ -2,7 +2,7 @@
 
 Shared concepts and section structure for tech binding `coding.md` files.
 
-Tech-specific language constructs are in `.claude/tech/{concern-value}/coding.md`.
+Tech-specific language constructs are in `.opencode/tech/{concern-value}/coding.md`.
 
 ## Backend Coding Sections
 

@@ -21,32 +21,32 @@ You write exactly ONE test following TDD red phase with failure prediction.
 4. **Trivial-logic check (frontend-logic and frontend-api only)** — ask: does this scenario require branching, computation, validation, or data transformation in the target layer? If the "implementation" would be a constant, an unconditional pass-through, or a value that never varies by input — there is no logic to test. **Identity/pass-through mappings are trivial** — if the function would forward fields unchanged (same structure, same values, no renaming/filtering/defaults), that is not transformation. Diagnostic: "If I removed this function and the caller used the input directly, would anything break?" If no → **STOP.** Report `[S]` for this step and its green counterpart, noting the behavior is purely presentational (handled in the component during `align-design`).
 5. Analyze existing tests in the layer
 6. **PREDICT the expected failure** (error message, exception type, or assertion failure)
-7. **Domain field gate (usecase/adapter layers only)** — before writing domain classes, list every domain class and field you plan to create. For each field, cite the exact Statements line that reads or asserts it. See `.claude/templates/workflow/red-phase-formats.md` for the domain field gate table format. A field used only inside a factory method but never read or asserted by any test or Statements line is **unreferenced -- REMOVE it**. Only KEEP fields survive to code. If removing a field makes another class unnecessary, delete that class too.
+7. **Domain field gate (usecase/adapter layers only)** — before writing domain classes, list every domain class and field you plan to create. For each field, cite the exact Statements line that reads or asserts it. See `.opencode/templates/workflow/red-phase-formats.md` for the domain field gate table format. A field used only inside a factory method but never read or asserted by any test or Statements line is **unreferenced -- REMOVE it**. Only KEEP fields survive to code. If removing a field makes another class unnecessary, delete that class too.
 8. Write ONE test WITHOUT the test disable marker
 9. **Post-implementation trivial-test gate (frontend-logic and frontend-api only)** — review every assertion in the test just written. If every assertion compares an output field to the same input field passed in (output ≈ input), the test is trivial — it only proves the function returns what it received. **STOP.** Delete the test and stubs, report `[S]` for this step and its green counterpart. This catches cases where step 4 misjudged.
 10. **RUN the test** to verify it fails
-11. **COMPARE -- field by field.** Write the comparison table from `.claude/templates/workflow/red-phase-formats.md`. Compare Type, Message, and Status fields. "Both are AssertionError" does NOT mean the messages match. Compare the message text literally.
+11. **COMPARE -- field by field.** Write the comparison table from `.opencode/templates/workflow/red-phase-formats.md`. Compare Type, Message, and Status fields. "Both are AssertionError" does NOT mean the messages match. Compare the message text literally.
 12. **If ANY cell says NO: loop back.** Update your prediction to match what actually happened (or fix the test setup if the wrong code path ran), then go to step 10 and re-run. Keep looping until ALL cells say YES. You may NOT add the test disable marker until all cells say YES — there are no exceptions, no "the red state is still valid" justification, no architectural reasoning that bypasses this. The loop exists because a wrong prediction means you don't fully understand the code path, and that misunderstanding will lead to mistakes in GREEN.
 13. **All cells say YES → add the test disable marker.**
 14. Report: files created, domain field gate table, comparison table from final iteration (all YES), next step
 
 ## Failure Prediction Format
 
-Before writing the test, document prediction. See `.claude/templates/workflow/red-phase-formats.md` for single-method and multi-method formats.
+Before writing the test, document prediction. See `.opencode/templates/workflow/red-phase-formats.md` for single-method and multi-method formats.
 
 ## Template by Layer
 
-Resolve concern profiles from `ProductSpecification/technology.md` `tech-profile:` block (see `.claude/rules/technology-loading.md`).
+Resolve concern profiles from `ProductSpecification/technology.md` `tech-profile:` block (see `.opencode/rules/technology-loading.md`).
 
-Backend layers (usecase, acceptance, adapters): `.claude/tech/{backend}/templates/{layer}/test-class.md`
+Backend layers (usecase, acceptance, adapters): `.opencode/tech/{backend}/templates/{layer}/test-class.md`
 
 Frontend layers:
 
 | Layer | Template Path |
 |-------|---------------|
-| frontend-logic | `.claude/tech/{frontend}/templates/logic-test.md` |
-| frontend-api | `.claude/tech/{frontend}/templates/api-test.md` |
-| selenium | `.claude/tech/{browser-testing}/templates/selenium-test.md` |
+| frontend-logic | `.opencode/tech/{frontend}/templates/logic-test.md` |
+| frontend-api | `.opencode/tech/{frontend}/templates/api-test.md` |
+| selenium | `.opencode/tech/{browser-testing}/templates/selenium-test.md` |
 
 ## Rules
 
@@ -79,7 +79,7 @@ For adapter layers (h2, rest, email, security), ONE test means **one test class 
 
 ## Disable Marker / Output Formats
 
-See `.claude/tech/{backend}/templates/testing/red-phase-formats.md` for test disable marker format. See `.claude/templates/workflow/red-phase-formats.md` for output summary format and frontend skip convention.
+See `.opencode/tech/{backend}/templates/testing/red-phase-formats.md` for test disable marker format. See `.opencode/templates/workflow/red-phase-formats.md` for output summary format and frontend skip convention.
 
 ## Reuse Checks (before writing)
 

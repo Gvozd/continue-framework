@@ -18,7 +18,7 @@ description: Continue working on a story or task by reading progress.md, executi
 9. **Update stories.md** -- for stories only, update the phase columns in `ProductSpecification/stories.md` (see below)
 10. **Task completion** -- after updating progress, if ALL checkboxes are `[x]` or `[S]` (no `[ ]` or `[~]` remaining), move the task folder to `ProductSpecification/tasks/done/` and include the move in the commit
 
-All workflow sequences, progress tracking rules, adapter discovery procedure, and task types are defined in `.claude/rules/workflow.md`. Progress file format examples are in `.claude/templates/workflow/progress-format.md`.
+All workflow sequences, progress tracking rules, adapter discovery procedure, and task types are defined in `.opencode/rules/workflow.md`. Progress file format examples are in `.opencode/templates/workflow/progress-format.md`.
 
 ## Resolving the Argument
 
@@ -40,7 +40,7 @@ Each progress.md checkbox maps to sub-skills. Dispatch per `workflow.md` sequenc
 | `design` | `/design-preview` → user approves (optionally with ADR) or `/architecture` → commit (if ADR produced) |
 | `red-*` (acceptance, usecase, adapter, selenium, frontend, frontend-api) | `red-agent.md` → `/test-review` → `/refactor` → commit |
 | `green-usecase`, `green-adapter X` | `green-agent.md` → `/refactor` → `/test-coverage {module} --focus` → commit |
-| `adapters-discovery` | Load `.claude/templates/workflow/adapter-discovery-checklist.md`, run all 3 checks (ports, exceptions, response shape), mark `[x] adapters-discovery`, insert concrete `red-adapter X` / `green-adapter X` steps (or `[S]`) → commit progress.md |
+| `adapters-discovery` | Load `.opencode/templates/workflow/adapter-discovery-checklist.md`, run all 3 checks (ports, exceptions, response shape), mark `[x] adapters-discovery`, insert concrete `red-adapter X` / `green-adapter X` steps (or `[S]`) → commit progress.md |
 | `green-acceptance` | Run inline (no subagent): read `green-agent.md` workflow, load acceptance implementation template, enable the disabled test (remove disable marker — only allowed test change), run acceptance tests, verify GREEN → commit |
 | `green-frontend`, `green-frontend-api` | `green-agent.md` → `/refactor` → commit |
 | `green-selenium` | `/run-backend` → `/run-frontend` → `green-agent.md` (remove-marker-only: no production code, no Statements changes, no backend changes — if test fails, STOP and report) → commit |
@@ -117,4 +117,4 @@ After updating `progress.md` for a **story** (not tasks), update the story's row
 
 ## Available Templates
 
-- `.claude/templates/workflow/progress-format.md` -- progress file format for stories, bug tasks, and refactoring tasks
+- `.opencode/templates/workflow/progress-format.md` -- progress file format for stories, bug tasks, and refactoring tasks

@@ -3,7 +3,7 @@
 ## Rules
 
 - Jobs are classes that own a `std::thread` running a timer loop
-- Jobs are first-layer adapters — see adapter interaction rules in `.claude/rules/coding-rules.md`
+- Jobs are first-layer adapters — see adapter interaction rules in `.opencode/rules/coding-rules.md`
 - Scheduler configuration (intervals, enable/disable) comes from environment variables or config file
 - Use `std::condition_variable` for cancellable sleep (graceful shutdown)
 

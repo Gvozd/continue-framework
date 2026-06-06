@@ -35,7 +35,7 @@ When implementation reveals a design fork — multiple viable approaches with di
 
 ### Phase 3: Write ADR
 
-Use the format from `.claude/templates/spec/adr-format.md`.
+Use the format from `.opencode/templates/spec/adr-format.md`.
 
 ### Phase 4: Update Test Specs
 
@@ -58,4 +58,4 @@ Commit message: `Story N: ADR for {decision topic} (Scenario X)`
 
 ## Templates
 
-- `.claude/templates/spec/adr-format.md` — ADR document format
+- `.opencode/templates/spec/adr-format.md` — ADR document format

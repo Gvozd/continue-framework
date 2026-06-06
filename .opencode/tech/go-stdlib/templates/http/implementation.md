@@ -1,6 +1,6 @@
 # HTTP Handler Implementation Template -- Go/stdlib
 
-> Universal rules: `.claude/templates/tdd/green-rest.md`
+> Universal rules: `.opencode/templates/tdd/green-rest.md`
 
 ## Tech-Specific Rules
 

@@ -15,19 +15,19 @@ Each layer has one job. Never duplicate content across layers.
 
 ## Two-Layer Split: Universal vs Tech-Specific
 
-Rules, templates, and conventions split into two layers (see `.claude/rules/technology-loading.md` for full protocol):
+Rules, templates, and conventions split into two layers (see `.opencode/rules/technology-loading.md` for full protocol):
 
 | Content type | Universal location | Tech-specific location |
 |--------------|--------------------|------------------------|
-| Rules/principles | `.claude/rules/*.md` | `.claude/tech/{concern-value}/*.md` |
-| Code templates | `.claude/templates/` | `.claude/tech/{concern-value}/templates/` |
+| Rules/principles | `.opencode/rules/*.md` | `.opencode/tech/{concern-value}/*.md` |
+| Code templates | `.opencode/templates/` | `.opencode/tech/{concern-value}/templates/` |
 
 **Boundary test:** if content mentions a specific language, framework, annotation, library, or CLI command — it belongs in the tech binding or tech template. Universal layers must be tech-agnostic.
 
 ## Deduplication Principles
 
 - Rule applies to ALL layers → **rules** file; agents/skills reference it
-- Rule is tech-specific (framework annotation, library API, build command) → **tech binding** (`.claude/tech/{concern-value}/`)
+- Rule is tech-specific (framework annotation, library API, build command) → **tech binding** (`.opencode/tech/{concern-value}/`)
 - Rule is phase-specific (red/green/refactor) → **agent**
 - Rule is layer-specific (h2, rest, selenium) → **skill** or **template**
 - Reference material (code examples, checklists, before/after patterns) → **template**; agents load on demand via file path. Agents keep only workflow + routing tables.

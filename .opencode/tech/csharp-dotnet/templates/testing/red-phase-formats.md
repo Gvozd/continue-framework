@@ -1,6 +1,6 @@
 # Red Phase -- C#/xUnit Conventions
 
-Universal formats and rules: `.claude/templates/workflow/red-phase-formats.md`
+Universal formats and rules: `.opencode/templates/workflow/red-phase-formats.md`
 
 ## [Fact(Skip)] Syntax
 

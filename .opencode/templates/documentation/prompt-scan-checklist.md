@@ -32,12 +32,12 @@ Read the content. Answer the question. **Cite the line or section as evidence, o
 
 | # | Question | Evidence required |
 |---|----------|------------------|
-| B1 | Does the file contain content that applies to ALL layers? (universal rule or principle) | Quote the content — belongs in `.claude/rules/` |
+| B1 | Does the file contain content that applies to ALL layers? (universal rule or principle) | Quote the content — belongs in `.opencode/rules/` |
 | B2 | Does the agent contain layer-specific context? (paths, config, or conventions for one specific adapter/layer) | Quote the content — belongs in skill or template |
 | B3 | Does the skill contain workflow logic or decision trees? (if/then routing, multi-step algorithms) | Quote the content — belongs in agent |
 | B4 | Is there duplicated content between this file and another layer? | Quote both locations |
 | B5 | Are all templates referenced in routing/smell tables also listed in the skill's Available Templates? | List any missing references |
-| B6 | Does a universal file (`.claude/rules/`, `.claude/templates/`) contain tech-specific content? (framework names, annotations, library APIs, CLI commands) | Quote the content — belongs in `.claude/tech/{concern-value}/` |
+| B6 | Does a universal file (`.opencode/rules/`, `.opencode/templates/`) contain tech-specific content? (framework names, annotations, library APIs, CLI commands) | Quote the content — belongs in `.opencode/tech/{concern-value}/` |
 
 ## Scan output format
 

@@ -1,6 +1,6 @@
 # gRPC Service Test Template -- C++/CMake
 
-> Universal rules: `.claude/templates/tdd/red-rest.md`
+> Universal rules: `.opencode/templates/tdd/red-rest.md`
 
 ## Tech-Specific Rules
 

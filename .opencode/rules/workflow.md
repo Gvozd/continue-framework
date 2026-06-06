@@ -23,7 +23,7 @@ For each scenario in `tests/01_API_Tests.md`:
 7. `green-adapter X` → `/green-adapter X` → `/refactor` (MANDATORY) → `/test-coverage {adapter} --focus` → commit (one per port)
 8. `green-acceptance` → `/green-acceptance` → commit
 
-The `[ ] adapters-discovery` checkbox is a gate — it must be resolved before any subsequent step executes. The full procedure is in `.claude/templates/workflow/adapter-discovery-checklist.md`.
+The `[ ] adapters-discovery` checkbox is a gate — it must be resolved before any subsequent step executes. The full procedure is in `.opencode/templates/workflow/adapter-discovery-checklist.md`.
 
 ## Integration Scenario Sequence
 
@@ -57,7 +57,7 @@ For each scenario in `tests/04_Infrastructure_Tests.md` (if exists): same TDD cy
 
 ## Infrastructure & Port Configuration
 
-Moved to `.claude/rules/infrastructure.md` (rules) and `.claude/tech/{backend}/templates/infrastructure/infrastructure-details.md` (full details).
+Moved to `.opencode/rules/infrastructure.md` (rules) and `.opencode/tech/{backend}/templates/infrastructure/infrastructure-details.md` (full details).
 
 ## Progress Tracking
 

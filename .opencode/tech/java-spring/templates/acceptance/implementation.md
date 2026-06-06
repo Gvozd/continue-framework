@@ -1,6 +1,6 @@
 # Acceptance Test Implementation (Green Phase) -- Java/Spring
 
-> Universal workflow: `.claude/templates/tdd/green-acceptance.md`
+> Universal workflow: `.opencode/templates/tdd/green-acceptance.md`
 
 ## Tech-Specific Details
 

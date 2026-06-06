@@ -1,6 +1,6 @@
 # Usecase Test Template -- Java/Spring
 
-> Universal rules: `.claude/templates/tdd/red-usecase.md`
+> Universal rules: `.opencode/templates/tdd/red-usecase.md`
 
 ## 3-Tier Locations
 

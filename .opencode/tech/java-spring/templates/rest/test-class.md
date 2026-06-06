@@ -1,6 +1,6 @@
 # Controller Test Template -- Java/Spring
 
-> Universal rules: `.claude/templates/tdd/red-rest.md`
+> Universal rules: `.opencode/templates/tdd/red-rest.md`
 
 ## Tech-Specific Rules
 

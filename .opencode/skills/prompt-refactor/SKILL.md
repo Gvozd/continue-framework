@@ -10,23 +10,23 @@ Orchestrates prompt-refactor-agent to find and fix structural and layer placemen
 ## Usage
 ```
 /prompt-refactor refactor-agent.md              # Scan specific file
-/prompt-refactor .claude/agents/red-agent.md    # Full path
+/prompt-refactor .opencode/agents/red-agent.md    # Full path
 /prompt-refactor                                # Scan all agents + skills
 ```
 
 ## Workflow
 
 1. Parse user input (target file or "all")
-2. Load agent instructions from `.claude/agents/prompt-refactor-agent.md`
-3. Agent loads scan checklist from `.claude/templates/documentation/prompt-scan-checklist.md`
+2. Load agent instructions from `.opencode/agents/prompt-refactor-agent.md`
+3. Agent loads scan checklist from `.opencode/templates/documentation/prompt-scan-checklist.md`
 4. Execute scan → identify smells → fix one at a time
 5. Return result: violations found, fixes applied, final state
 
 ## Layer-Specific
 
-- Classification rules: `.claude/rules/prompt-rules.md`
-- Two-layer structure: `.claude/rules/technology-loading.md`
-- Scan checklist: `.claude/templates/documentation/prompt-scan-checklist.md`
+- Classification rules: `.opencode/rules/prompt-rules.md`
+- Two-layer structure: `.opencode/rules/technology-loading.md`
+- Scan checklist: `.opencode/templates/documentation/prompt-scan-checklist.md`
 
 ## Next Step
 

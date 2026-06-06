@@ -2,7 +2,7 @@
 
 ## Layer Responsibilities
 
-See `.claude/rules/prompt-rules.md` for the authoritative layer table.
+See `.opencode/rules/prompt-rules.md` for the authoritative layer table.
 
 Writing style by layer:
 - **Rules**: Declarative — "Never X", "Prefer Y over Z", "Use A when B"
@@ -15,16 +15,16 @@ Writing style by layer:
 For each piece of content, ask:
 
 1. **Is there a universal principle?** → Rules file. Pick the right one by topic (see topic table below).
-2. **Is it technology-specific?** (mentions a framework, annotation, library, CLI command) → Tech binding (`.claude/tech/{concern-value}/{binding}.md`) or tech template (`.claude/tech/{concern-value}/templates/`). See `.claude/rules/technology-loading.md` for the binding-to-topic mapping.
+2. **Is it technology-specific?** (mentions a framework, annotation, library, CLI command) → Tech binding (`.opencode/tech/{concern-value}/{binding}.md`) or tech template (`.opencode/tech/{concern-value}/templates/`). See `.opencode/rules/technology-loading.md` for the binding-to-topic mapping.
 3. **Is there a detection pattern (grep, checklist item)?** → Agent that runs the detection.
-4. **Is there a code example, anti-pattern, or before/after?** → Template the agent references. Universal patterns → `.claude/templates/`, tech-specific patterns → `.claude/tech/{concern-value}/templates/`.
+4. **Is there a code example, anti-pattern, or before/after?** → Template the agent references. Universal patterns → `.opencode/templates/`, tech-specific patterns → `.opencode/tech/{concern-value}/templates/`.
 5. **Is there layer-specific context?** → Skill or template for that layer.
 
 Often the answer is "yes to multiple" — that means multiple files get updated. A common split: universal principle → rules file, tech-specific example → tech binding or tech template.
 
 ## Rules File by Topic
 
-Universal rules (`.claude/rules/`) — tech-agnostic principles only:
+Universal rules (`.opencode/rules/`) — tech-agnostic principles only:
 
 | Topic keywords | Target |
 |---------------|--------|
@@ -35,7 +35,7 @@ Universal rules (`.claude/rules/`) — tech-agnostic principles only:
 | workflow, story, interview, spec, progress, scenario | `workflow.md` |
 | tech profile, tech binding, technology loading, conventions table | `technology-loading.md` |
 
-Tech bindings (`.claude/tech/{concern-value}/`) — framework-specific idioms:
+Tech bindings (`.opencode/tech/{concern-value}/`) — framework-specific idioms:
 
 | Topic keywords | Target binding |
 |---------------|----------------|
@@ -60,8 +60,8 @@ Templates often have multiple distinct sections that need coordinated updates:
 
 | Template | Sections |
 |----------|----------|
-| `.claude/templates/testing/test-review-patterns.md` | Anti-Pattern Catalog (descriptions), Assertion Rules (numbered list), Assertion Improvements (concept-level table), Output Summary Format |
-| `.claude/tech/{backend}/templates/testing/test-review-patterns.md` | Anti-Pattern Examples (BAD/GOOD code in language syntax), Correct Patterns (code), Assertion Improvements (syntax-specific table), Tech-Specific Rules |
+| `.opencode/templates/testing/test-review-patterns.md` | Anti-Pattern Catalog (descriptions), Assertion Rules (numbered list), Assertion Improvements (concept-level table), Output Summary Format |
+| `.opencode/tech/{backend}/templates/testing/test-review-patterns.md` | Anti-Pattern Examples (BAD/GOOD code in language syntax), Correct Patterns (code), Assertion Improvements (syntax-specific table), Tech-Specific Rules |
 | `documentation/prompt-scan-checklist.md` | Check items with IDs (A1-A5 structural, B1-B5 placement) |
 | `refactoring/scan-checklist.md` | Smell detection patterns |
 
@@ -76,7 +76,7 @@ Templates often have multiple distinct sections that need coordinated updates:
 ### Tech-specific content
 
 **Input:** "Always use `eq()` not `any()` in Mockito verify calls"
-**Classification:** Technology-specific (Mockito is a library) → tech binding `.claude/tech/{concern-value}/tdd.md`
+**Classification:** Technology-specific (Mockito is a library) → tech binding `.opencode/tech/{concern-value}/tdd.md`
 **Action:** Add to test framework idioms in the tech binding. NOT in universal `tdd-rules.md`.
 
 ### Multi-target: new test-review check
@@ -85,8 +85,8 @@ Templates often have multiple distinct sections that need coordinated updates:
 **Classification:**
 - Principle exists in `tdd-rules.md` ("NEVER inject storage adapters into Statements") — check if already there
 - Detection pattern needed → `test-review-agent.md` checklist (new row)
-- Anti-pattern description + assertion rule → `.claude/templates/testing/test-review-patterns.md` (universal)
-- Anti-pattern code examples + syntax table row → `.claude/tech/{backend}/templates/testing/test-review-patterns.md` (per tech profile)
+- Anti-pattern description + assertion rule → `.opencode/templates/testing/test-review-patterns.md` (universal)
+- Anti-pattern code examples + syntax table row → `.opencode/tech/{backend}/templates/testing/test-review-patterns.md` (per tech profile)
 
 **Action:** Write to all three locations.
 
@@ -109,7 +109,7 @@ Templates often have multiple distinct sections that need coordinated updates:
 
 ## Tech-Agnostic Verification
 
-Before finalizing any write to a universal file (`.claude/rules/`, `.claude/templates/`), scan the content for tech leaks. Universal content must pass the boundary test from `prompt-rules.md`: if it mentions a specific language, framework, annotation, library, or CLI command, it belongs in the tech binding or tech template — not the universal layer.
+Before finalizing any write to a universal file (`.opencode/rules/`, `.opencode/templates/`), scan the content for tech leaks. Universal content must pass the boundary test from `prompt-rules.md`: if it mentions a specific language, framework, annotation, library, or CLI command, it belongs in the tech binding or tech template — not the universal layer.
 
 **Scan for these indicators:**
 
@@ -122,7 +122,7 @@ Before finalizing any write to a universal file (`.claude/rules/`, `.claude/temp
 | Build/CLI commands | `mvn test`, `npm run`, `cargo build` | Reference "the build tool" or "see Conventions table in technology.md" |
 | Code snippets in a specific language | Java method signatures, Python function defs | Use pseudocode or prose description; put real code in tech templates |
 
-**If a leak is found:** Default to rephrasing in universal terms — replace the tech-specific word with the concept it represents (see Fix column above). Most leaks are just word choice; the idea itself is universal. Only relocate to `.claude/tech/{concern-value}/` when the content is inherently tech-specific and cannot be expressed generically (a code example, a framework idiom, a library-specific API pattern).
+**If a leak is found:** Default to rephrasing in universal terms — replace the tech-specific word with the concept it represents (see Fix column above). Most leaks are just word choice; the idea itself is universal. Only relocate to `.opencode/tech/{concern-value}/` when the content is inherently tech-specific and cannot be expressed generically (a code example, a framework idiom, a library-specific API pattern).
 
 ## Impact Assessment
 

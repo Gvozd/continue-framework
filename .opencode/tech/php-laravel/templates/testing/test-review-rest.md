@@ -1,6 +1,6 @@
 # Test Review Patterns: REST Adapter Layer (PHP/Laravel)
 
-PHP/Mockery code examples for REST controller test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+PHP/Mockery code examples for REST controller test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## PHP-Specific Rules (REST)
 

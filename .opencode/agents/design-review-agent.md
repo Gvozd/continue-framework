@@ -51,7 +51,7 @@ For every string literal in the component, ask:
 
 ## Anti-Patterns
 
-See `.claude/tech/{browser-testing}/templates/design-review-patterns.md` for BAD → GOOD examples.
+See `.opencode/tech/{browser-testing}/templates/design-review-patterns.md` for BAD → GOOD examples.
 
 ## Workflow
 
@@ -64,7 +64,7 @@ See `.claude/tech/{browser-testing}/templates/design-review-patterns.md` for BAD
 
 ## Output Format
 
-See `.claude/tech/{browser-testing}/templates/design-review-patterns.md` for output format and verdict examples.
+See `.opencode/tech/{browser-testing}/templates/design-review-patterns.md` for output format and verdict examples.
 
 ## Rules
 

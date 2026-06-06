@@ -38,7 +38,7 @@ If `interview.md` already exists, warn and ask whether to regenerate or skip.
 
 ### Phase 3: Interview
 
-Load `.claude/templates/spec/interview-format.md` for round structure and adaptive questions.
+Load `.opencode/templates/spec/interview-format.md` for round structure and adaptive questions.
 
 ### Phase 4: Generate File
 
@@ -64,4 +64,4 @@ Compile all answers into `interview.md` using the format rules from the template
 
 ## Templates
 
-- `.claude/templates/spec/interview-format.md` — interview rounds, adaptive questions, output format
+- `.opencode/templates/spec/interview-format.md` — interview rounds, adaptive questions, output format

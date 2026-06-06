@@ -1,6 +1,6 @@
 # Test Coverage Commands — Universal
 
-Tech-specific commands (run, parse, extract) are in `.claude/tech/{backend}/templates/testing/coverage-commands.md`. This file defines the universal workflow and report structure.
+Tech-specific commands (run, parse, extract) are in `.opencode/tech/{backend}/templates/testing/coverage-commands.md`. This file defines the universal workflow and report structure.
 
 ## Focus Mode (--focus)
 
@@ -53,4 +53,4 @@ If all classes have 100% line and branch coverage, say so — no need to list th
 
 ## Gap-to-Scenario Mapping and Remediation
 
-See `.claude/templates/workflow/coverage-formats.md` for the universal gap-to-scenario mapping, reachability check, remediation workflow, and output format.
+See `.opencode/templates/workflow/coverage-formats.md` for the universal gap-to-scenario mapping, reachability check, remediation workflow, and output format.

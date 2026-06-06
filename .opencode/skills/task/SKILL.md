@@ -39,7 +39,7 @@ Gather from user:
 
 ### 5. Generate spec.md
 
-Write `ProductSpecification/tasks/{N}-{type}-{slug}/spec.md` using the format in `.claude/templates/task/creation-formats.md`.
+Write `ProductSpecification/tasks/{N}-{type}-{slug}/spec.md` using the format in `.opencode/templates/task/creation-formats.md`.
 
 ### 6. Generate progress.md
 
@@ -66,4 +66,4 @@ Show spec.md and progress.md to user for review. Commit both files.
 
 ## Templates
 
-- `.claude/templates/task/creation-formats.md` -- spec.md format, progress.md formats
+- `.opencode/templates/task/creation-formats.md` -- spec.md format, progress.md formats

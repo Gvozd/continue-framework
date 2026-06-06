@@ -18,7 +18,7 @@ Classify a piece of new content and write it to the correct file(s) in the proje
 
 1. **Parse input.** If no content provided, ask the user what to add.
 2. **Understand the content.** What does it mean? Is it a principle, a detection pattern, a code example, a workflow step?
-3. **Classify targets** using `.claude/templates/documentation/prompt-update-classification.md`. Walk ALL 4 decision questions explicitly — principle, detection pattern, code example, layer-specific context. Show the classification before writing:
+3. **Classify targets** using `.opencode/templates/documentation/prompt-update-classification.md`. Walk ALL 4 decision questions explicitly — principle, detection pattern, code example, layer-specific context. Show the classification before writing:
    ```
    1. Principle? → frontend-rules.md (new section)
    2. Detection? → refactor-agent.md (smell table) + scan-checklist.md (A-check)
@@ -26,9 +26,9 @@ Classify a piece of new content and write it to the correct file(s) in the proje
    4. Layer-specific? → n/a
    ```
    Most updates touch 2+ files. If only one target is identified, double-check — a rule without detection won't be enforced, a detection without a template won't guide the fix.
-4. **Check for duplication** — grep key terms across `.claude/rules/`, `.claude/tech/`, `.claude/agents/`, `.claude/skills/`, `.claude/templates/`. If a duplicate exists, report it and ask: skip, merge, or replace?
+4. **Check for duplication** — grep key terms across `.opencode/rules/`, `.opencode/tech/`, `.opencode/agents/`, `.opencode/skills/`, `.opencode/templates/`. If a duplicate exists, report it and ask: skip, merge, or replace?
 5. **Write to all target files** in one pass. Match each file's existing style.
-6. **Tech-agnostic gate** — for every write targeting a universal file (`.claude/rules/`, `.claude/templates/`), scan the content you just wrote for tech leaks. See "Tech-Agnostic Verification" in the classification template. If a leak is found, rephrase in universal terms first — only relocate to tech binding when the content is inherently tech-specific.
+6. **Tech-agnostic gate** — for every write targeting a universal file (`.opencode/rules/`, `.opencode/templates/`), scan the content you just wrote for tech leaks. See "Tech-Agnostic Verification" in the classification template. If a leak is found, rephrase in universal terms first — only relocate to tech binding when the content is inherently tech-specific.
 7. **Report** what was written and where (see Output format in classification template).
 8. **Verify with `/skill-creator`** — see Impact Assessment in classification template.
 
@@ -43,7 +43,7 @@ Classify a piece of new content and write it to the correct file(s) in the proje
 
 ## Templates
 
-- `.claude/templates/documentation/prompt-update-classification.md` — classification guide, decision process, examples, impact assessment
+- `.opencode/templates/documentation/prompt-update-classification.md` — classification guide, decision process, examples, impact assessment
 
 ## Next Steps
 

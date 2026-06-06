@@ -62,13 +62,13 @@ The framework is tech-agnostic. Set four keys in `ProductSpecification/technolog
 | CSS | `tailwind` · `plain-css` |
 | Browser testing | `selenium` · `playwright` · `cypress` |
 
-Profiles are independent — any combination works. Each lives in `.claude/tech/{profile}/` with `coding.md`, `tdd.md`, `infrastructure.md`, and code templates. Adding a new profile means adding that directory; rules, agents, and skills resolve bindings dynamically.
+Profiles are independent — any combination works. Each lives in `.opencode/tech/{profile}/` with `coding.md`, `tdd.md`, `infrastructure.md`, and code templates. Adding a new profile means adding that directory; rules, agents, and skills resolve bindings dynamically.
 
 ## Quick start
 
 ```bash
 # 1. Copy the framework into your project
-cp -r continue-framework/.claude continue-framework/CLAUDE.md continue-framework/ProductSpecification your-project/
+cp -r continue-framework/.opencode continue-framework/CLAUDE.md continue-framework/ProductSpecification your-project/
 cd your-project
 
 # 2. Pick your stack in ProductSpecification/technology.md
@@ -88,7 +88,7 @@ First run triggers the spec phase (`/interview` → `/story` → `/mockups` → 
 ## What's inside
 
 ```
-.claude/
+.opencode/
 ├── rules/      8 files — universal principles (Clean Architecture, TDD, DDD, workflow)
 ├── agents/     8 files — red, green, refactor, coverage, test-review, test-runner, ...
 ├── skills/    28 slash commands — /continue, /refactor, /test-coverage, /design-preview, ...
@@ -96,7 +96,7 @@ First run triggers the spec phase (`/interview` → `/story` → `/mockups` → 
 └── tech/      15 directories — pluggable technology profiles
 ```
 
-302 prompt files total. Every AI decision traces back to a specific rule, checklist item, or template. Start with `CLAUDE.md` and `.claude/rules/workflow.md` to understand the loop; `.claude/skills/continue/SKILL.md` is the dispatcher.
+302 prompt files total. Every AI decision traces back to a specific rule, checklist item, or template. Start with `CLAUDE.md` and `.opencode/rules/workflow.md` to understand the loop; `.opencode/skills/continue/SKILL.md` is the dispatcher.
 
 ## Limitations
 

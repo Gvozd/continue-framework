@@ -1,6 +1,6 @@
 # Usecase Implementation Template -- C#/ASP.NET Core
 
-> Universal rules: `.claude/templates/tdd/green-usecase.md`
+> Universal rules: `.opencode/templates/tdd/green-usecase.md`
 
 ## Tech-Specific Details
 

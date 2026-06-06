@@ -2,7 +2,7 @@
 
 Reference material for the test-review agent: anti-patterns, assertion rules, and review output format.
 
-Tech-specific code examples (BAD/GOOD with language syntax) are in `.claude/tech/{backend}/templates/testing/test-review-patterns.md`.
+Tech-specific code examples (BAD/GOOD with language syntax) are in `.opencode/tech/{backend}/templates/testing/test-review-patterns.md`.
 
 ## Anti-Pattern Catalog
 

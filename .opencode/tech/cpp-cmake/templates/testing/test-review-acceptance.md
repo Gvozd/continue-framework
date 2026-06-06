@@ -1,6 +1,6 @@
 # Test Review Patterns: Acceptance Layer (C++/Google Test)
 
-C++/Google Test code examples for acceptance test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+C++/Google Test code examples for acceptance test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## C++-Specific Rules (Acceptance)
 

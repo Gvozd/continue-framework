@@ -1,6 +1,6 @@
 # Test Review Patterns: REST Adapter Layer (Java/Spring)
 
-Java/Mockito code examples for REST controller test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Java/Mockito code examples for REST controller test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Java-Specific Rules (REST)
 

@@ -1,6 +1,6 @@
 # Test Review Patterns: H2 Adapter Layer (Go/stdlib)
 
-Go/testify code examples for persistence adapter test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Go/testify code examples for persistence adapter test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Go-Specific Rules (H2)
 

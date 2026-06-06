@@ -1,6 +1,6 @@
 # Test Review Patterns: H2 Adapter Layer (Python/Django)
 
-Python/pytest code examples for persistence adapter test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Python/pytest code examples for persistence adapter test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Python-Specific Rules (H2)
 

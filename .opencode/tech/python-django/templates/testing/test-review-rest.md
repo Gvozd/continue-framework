@@ -1,6 +1,6 @@
 # Test Review Patterns: REST Adapter Layer (Python/Django)
 
-Python/unittest.mock code examples for REST controller test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Python/unittest.mock code examples for REST controller test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Python-Specific Rules (REST)
 

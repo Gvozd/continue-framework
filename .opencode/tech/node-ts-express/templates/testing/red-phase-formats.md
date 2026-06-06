@@ -1,6 +1,6 @@
 # Red Phase -- TypeScript/Vitest Conventions
 
-Universal formats and rules: `.claude/templates/workflow/red-phase-formats.md`
+Universal formats and rules: `.opencode/templates/workflow/red-phase-formats.md`
 
 ## .skip Syntax
 

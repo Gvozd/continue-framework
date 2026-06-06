@@ -39,7 +39,7 @@ Find related archived draft in `ProductSpecification/Archived/DraftStories/1st-i
 
 ### Phase 3: Generate Specifications
 
-Load `.claude/templates/spec/story-templates.md` for document structure.
+Load `.opencode/templates/spec/story-templates.md` for document structure.
 
 Generate **two files**:
 - Main spec: `NN_StoryName.md` (~50 lines max, implementation-focused)

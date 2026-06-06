@@ -1,6 +1,6 @@
 # Test Review Patterns: Acceptance Layer (Java/Spring)
 
-Java/AssertJ code examples for acceptance test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Java/AssertJ code examples for acceptance test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Java-Specific Rules (Acceptance)
 

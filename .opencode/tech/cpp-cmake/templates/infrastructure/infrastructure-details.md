@@ -1,7 +1,7 @@
 # Infrastructure Details -- C++/CMake
 
 Detailed reference for local development infrastructure.
-For rules and quick reference, see `.claude/rules/infrastructure.md`.
+For rules and quick reference, see `.opencode/rules/infrastructure.md`.
 
 ## Local Development
 

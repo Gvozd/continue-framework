@@ -1,6 +1,6 @@
 # Test Review Patterns: REST Adapter Layer (Node/TypeScript)
 
-TypeScript/Vitest code examples for REST controller test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+TypeScript/Vitest code examples for REST controller test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## TypeScript-Specific Rules (REST)
 

@@ -1,6 +1,6 @@
 # Test Review Patterns: Other Layers (Python/Django)
 
-Python/pytest code examples for selenium, email, scheduling, and security test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Python/pytest code examples for selenium, email, scheduling, and security test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Selenium Anti-Pattern Examples
 

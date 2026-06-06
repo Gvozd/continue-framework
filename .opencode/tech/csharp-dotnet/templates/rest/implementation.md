@@ -1,6 +1,6 @@
 # Controller Implementation Template -- C#/ASP.NET Core
 
-> Universal rules: `.claude/templates/tdd/green-rest.md`
+> Universal rules: `.opencode/templates/tdd/green-rest.md`
 
 ## Tech-Specific Rules
 

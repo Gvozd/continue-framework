@@ -1,6 +1,6 @@
 # C#/ASP.NET Core Coding Idioms
 
-Tech binding for `coding-rules.md`. Shared section structure: `.claude/templates/coding/coding-sections.md`.
+Tech binding for `coding-rules.md`. Shared section structure: `.opencode/templates/coding/coding-sections.md`.
 
 ## Deployment
 

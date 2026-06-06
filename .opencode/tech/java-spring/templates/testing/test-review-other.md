@@ -1,6 +1,6 @@
 # Test Review Patterns: Other Layers (Java/Spring)
 
-Java/AssertJ code examples for selenium, email, scheduling, and security test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Java/AssertJ code examples for selenium, email, scheduling, and security test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Selenium Anti-Pattern Examples
 

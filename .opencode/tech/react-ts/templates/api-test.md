@@ -2,7 +2,7 @@
 
 ## Backend Endpoint Pre-Check
 
-See `.claude/templates/workflow/api-test-pre-check.md` for the full pre-check procedure.
+See `.opencode/templates/workflow/api-test-pre-check.md` for the full pre-check procedure.
 
 ## Test File
 

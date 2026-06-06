@@ -1,6 +1,6 @@
 # Test Review Patterns: Usecase Layer (C++/Google Test)
 
-C++/Google Test/GMock code examples for usecase test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+C++/Google Test/GMock code examples for usecase test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## C++-Specific Rules (Usecase)
 

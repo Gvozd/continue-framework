@@ -17,16 +17,16 @@ Spawns `refactor-agent` for code improvements.
 
 ## Workflow
 
-1. Load `.claude/agents/refactor-agent.md`
+1. Load `.opencode/agents/refactor-agent.md`
 2. Agent reads target file + tests
 3. **Run the scan checklist** defined in the agent — enumerate (Section A) + judge (Section B). Fix violations before declaring clean.
-4. Identifies smell, loads template from `.claude/templates/refactoring/`
+4. Identifies smell, loads template from `.opencode/templates/refactoring/`
 5. Applies ONE refactoring, runs tests
 6. Repeats until clean
 
 ## Available Templates
 
-### Backend (`.claude/templates/refactoring/`)
+### Backend (`.opencode/templates/refactoring/`)
 
 - `scan-checklist.md` - Mandatory structural + judgment scan checklist
 - `value-object.md` - Replace primitive with value object
@@ -47,7 +47,7 @@ Spawns `refactor-agent` for code improvements.
 - `adapter-query.md` - Extract typed AdapterQuery for Specification/CriteriaQuery logic
 - `subselect-read-model.md` - Consolidate multiple repositories into single query with ORM relationships
 
-### Frontend (`.claude/templates/refactoring/`)
+### Frontend (`.opencode/templates/refactoring/`)
 
 - `extract-component.md` - Extract JSX block into field/section component
 - `extract-shared-ui.md` - Move reusable component to `app/components/ui/`

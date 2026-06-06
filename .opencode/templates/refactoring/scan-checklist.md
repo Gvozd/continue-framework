@@ -236,7 +236,7 @@ B11–B12. [clean]
 
 ## Code Smells Routing Table
 
-All templates live in `.claude/templates/refactoring/`.
+All templates live in `.opencode/templates/refactoring/`.
 
 ### Backend Code Smells
 

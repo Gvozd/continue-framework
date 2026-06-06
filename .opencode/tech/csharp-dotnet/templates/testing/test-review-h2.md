@@ -1,6 +1,6 @@
 # Test Review Patterns: H2 Adapter Layer (C#/ASP.NET Core)
 
-C#/FluentAssertions code examples for persistence adapter test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+C#/FluentAssertions code examples for persistence adapter test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## C#-Specific Rules (H2)
 

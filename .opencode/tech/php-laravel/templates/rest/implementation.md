@@ -1,6 +1,6 @@
 # Controller Implementation Template -- PHP/Laravel
 
-> Universal rules: `.claude/templates/tdd/green-rest.md`
+> Universal rules: `.opencode/templates/tdd/green-rest.md`
 
 ## Tech-Specific Rules
 

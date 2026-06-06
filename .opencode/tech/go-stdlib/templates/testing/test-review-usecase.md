@@ -1,6 +1,6 @@
 # Test Review Patterns: Usecase Layer (Go/stdlib)
 
-Go/testify code examples for usecase test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Go/testify code examples for usecase test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Go-Specific Rules (Usecase)
 

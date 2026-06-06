@@ -1,6 +1,6 @@
 # Vue 3/TypeScript Coding Conventions
 
-Tech binding for `frontend-rules.md`. Shared section structure: `.claude/templates/coding/coding-sections.md`.
+Tech binding for `frontend-rules.md`. Shared section structure: `.opencode/templates/coding/coding-sections.md`.
 
 ## File Extensions (Humble Object)
 

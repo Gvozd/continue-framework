@@ -11,9 +11,9 @@ description: Refactor code using Martin Fowler's patterns
 
 1. **Read** target file and its tests
 2. **Scan siblings** — if the target extends a base class or implements the same interface as other classes, read ALL sibling classes. Look for duplicated fields, methods, stubs, or helpers.
-3. **Run scan checklist** — load `.claude/templates/refactoring/scan-checklist.md`, enumerate (Section A) + judge (Section B). Show filled checklist. Violations are refactoring candidates.
+3. **Run scan checklist** — load `.opencode/templates/refactoring/scan-checklist.md`, enumerate (Section A) + judge (Section B). Show filled checklist. Violations are refactoring candidates.
 4. **Identify smell** from scan results + smell table below
-5. **Load template** from `.claude/templates/refactoring/`
+5. **Load template** from `.opencode/templates/refactoring/`
 6. **Apply ONE refactoring** following template steps
 7. **Verify size** — `wc -l` on every changed file. If any file exceeds 200 lines, the refactoring is incomplete — split further before proceeding.
 8. **Run tests** for the module
@@ -22,7 +22,7 @@ description: Refactor code using Martin Fowler's patterns
 
 ## Code Smells Routing
 
-The smell-to-fix-to-template routing table is in the "Code Smells Routing Table" section at the end of `.claude/templates/refactoring/scan-checklist.md` (loaded in step 3).
+The smell-to-fix-to-template routing table is in the "Code Smells Routing Table" section at the end of `.opencode/templates/refactoring/scan-checklist.md` (loaded in step 3).
 
 ## Rules
 

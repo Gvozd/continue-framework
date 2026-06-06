@@ -1,6 +1,6 @@
 # Selenium Browser Testing Conventions
 
-Tech binding for `frontend-rules.md` Selenium section. Shared section structure: `.claude/templates/coding/coding-sections.md`.
+Tech binding for `frontend-rules.md` Selenium section. Shared section structure: `.opencode/templates/coding/coding-sections.md`.
 
 ## 2-Tier DSL Architecture
 

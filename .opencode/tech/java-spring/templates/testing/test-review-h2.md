@@ -1,6 +1,6 @@
 # Test Review Patterns: H2 Adapter Layer (Java/Spring)
 
-Java/AssertJ code examples for persistence adapter test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Java/AssertJ code examples for persistence adapter test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Java-Specific Rules (H2)
 

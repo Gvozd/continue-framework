@@ -1,6 +1,6 @@
 # Test Review Patterns: Usecase Layer (Java/Spring)
 
-Java/AssertJ code examples for usecase test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+Java/AssertJ code examples for usecase test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Java-Specific Rules (Usecase)
 

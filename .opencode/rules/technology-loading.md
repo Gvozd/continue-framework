@@ -12,7 +12,7 @@ tech-profile:
   browser-testing: {browser-testing-profile}
 ```
 
-Each concern resolves independently to `.claude/tech/{concern-value}/`.
+Each concern resolves independently to `.opencode/tech/{concern-value}/`.
 
 ## Concern-to-Layer Mapping
 
@@ -33,7 +33,7 @@ When a skill needs bindings from multiple concerns (e.g., a browser test skill n
 
 ```
 ProductSpecification/technology.md          # Declares composite tech-profile
-.claude/tech/
+.opencode/tech/
   {concern-value}/                          # One directory per concern
     coding.md                               # Language/framework coding conventions
     tdd.md                                  # Tech-specific TDD patterns (optional)
@@ -42,14 +42,14 @@ ProductSpecification/technology.md          # Declares composite tech-profile
       {layer}/                              # One subdirectory per adapter/layer
 ```
 
-Each concern directory contains the bindings relevant to that technology. The exact files and template subdirectories vary per profile — inspect `.claude/tech/{concern-value}/` to see what a profile provides.
+Each concern directory contains the bindings relevant to that technology. The exact files and template subdirectories vary per profile — inspect `.opencode/tech/{concern-value}/` to see what a profile provides.
 
 ## How Agents and Skills Load Tech Bindings
 
 1. **Read profile**: Read `ProductSpecification/technology.md`, extract all four concern keys from the `tech-profile:` block
 2. **Identify concern**: Determine which concern applies to the current layer/skill (see mapping table above)
-3. **Load tech rules**: Read `.claude/tech/{concern-value}/{binding}.md` for the relevant binding (coding, tdd, infrastructure)
-4. **Resolve templates**: Template paths are `.claude/tech/{concern-value}/templates/{template-dir}/`
+3. **Load tech rules**: Read `.opencode/tech/{concern-value}/{binding}.md` for the relevant binding (coding, tdd, infrastructure)
+4. **Resolve templates**: Template paths are `.opencode/tech/{concern-value}/templates/{template-dir}/`
 5. **Multi-concern skills**: When a skill spans concerns, load bindings from each relevant profile
 
 ## Conventions Table
@@ -59,6 +59,6 @@ Each concern directory contains the bindings relevant to that technology. The ex
 ## Adding a New Tech Profile
 
 To support a new technology combination:
-1. Create `.claude/tech/{profile-name}/` for each concern with the relevant bindings (`coding.md`, `tdd.md`, `infrastructure.md`, `templates/`)
+1. Create `.opencode/tech/{profile-name}/` for each concern with the relevant bindings (`coding.md`, `tdd.md`, `infrastructure.md`, `templates/`)
 2. Update `ProductSpecification/technology.md` to set the four concern keys
 3. No changes needed to universal rules, agents, or skills -- they resolve via concern mapping

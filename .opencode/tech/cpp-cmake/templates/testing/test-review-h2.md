@@ -1,6 +1,6 @@
 # Test Review Patterns: H2 Adapter Layer (C++/Google Test)
 
-C++/Google Test code examples for persistence adapter test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+C++/Google Test code examples for persistence adapter test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## C++-Specific Rules (H2)
 

@@ -1,6 +1,6 @@
 # Red Phase -- PHP/PHPUnit Conventions
 
-Universal formats and rules: `.claude/templates/workflow/red-phase-formats.md`
+Universal formats and rules: `.opencode/templates/workflow/red-phase-formats.md`
 
 ## markTestSkipped Syntax
 

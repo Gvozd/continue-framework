@@ -20,10 +20,10 @@ Temporarily modifies Selenium configuration to run browser tests visibly with de
 ## Setup
 
 Read `ProductSpecification/technology.md` for:
-- `tech-profile` block → resolve `backend` concern to `.claude/tech/{backend}/templates/acceptance/` for file paths and language conventions
+- `tech-profile` block → resolve `backend` concern to `.opencode/tech/{backend}/templates/acceptance/` for file paths and language conventions
 - **Acceptance test command** from Conventions table
 
-Read `.claude/tech/{backend}/templates/acceptance/` to find the UI test base class and Browser statements class paths and conventions.
+Read `.opencode/tech/{backend}/templates/acceptance/` to find the UI test base class and Browser statements class paths and conventions.
 
 ## Workflow
 

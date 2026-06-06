@@ -1,6 +1,6 @@
 # Test Review Patterns: Usecase Layer (C#/ASP.NET Core)
 
-C#/xUnit/FluentAssertions code examples for usecase test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+C#/xUnit/FluentAssertions code examples for usecase test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## C#-Specific Rules (Usecase)
 

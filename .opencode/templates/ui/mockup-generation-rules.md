@@ -37,7 +37,7 @@ Use templates from `ProductSpecification/ui/templates/` as structural starting p
 - One file per screen state. Naming: `NN-descriptive-name.html`.
 - Desktop and mobile are separate files, NOT responsive breakpoints.
 
-**Icon Reference:** See `.claude/templates/ui/icon-reference.md` for the full icon table.
+**Icon Reference:** See `.opencode/templates/ui/icon-reference.md` for the full icon table.
 
 ## Desktop (viewport 1400px)
 

@@ -1,6 +1,6 @@
 # Test Coverage Commands — Java/Spring (JaCoCo)
 
-Universal workflow, module mapping, report format, and remediation: see `.claude/templates/testing/coverage-commands.md`.
+Universal workflow, module mapping, report format, and remediation: see `.opencode/templates/testing/coverage-commands.md`.
 
 ## Run tests with coverage
 

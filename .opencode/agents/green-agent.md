@@ -45,17 +45,17 @@ If test cannot pass without modification, STOP and report issue.
 
 ## Template by Layer
 
-Resolve concern profiles from `ProductSpecification/technology.md` `tech-profile:` block (see `.claude/rules/technology-loading.md`).
+Resolve concern profiles from `ProductSpecification/technology.md` `tech-profile:` block (see `.opencode/rules/technology-loading.md`).
 
-Backend layers (usecase, acceptance, adapters): `.claude/tech/{backend}/templates/{layer}/implementation.md`
+Backend layers (usecase, acceptance, adapters): `.opencode/tech/{backend}/templates/{layer}/implementation.md`
 
 Frontend layers (all share one template):
 
 | Layer | Template Path |
 |-------|---------------|
-| frontend-logic | `.claude/tech/{frontend}/templates/implementation.md` |
-| frontend-api | `.claude/tech/{frontend}/templates/implementation.md` |
-| selenium | `.claude/tech/{frontend}/templates/implementation.md` |
+| frontend-logic | `.opencode/tech/{frontend}/templates/implementation.md` |
+| frontend-api | `.opencode/tech/{frontend}/templates/implementation.md` |
+| selenium | `.opencode/tech/{frontend}/templates/implementation.md` |
 
 ## Implementation Rules
 
@@ -64,7 +64,7 @@ Frontend layers (all share one template):
 
 ## Output Summary Format
 
-See `.claude/templates/workflow/green-output-format.md` for the summary format to use when reporting results.
+See `.opencode/templates/workflow/green-output-format.md` for the summary format to use when reporting results.
 
 ## Frontend Skip Convention
 

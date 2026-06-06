@@ -1,6 +1,6 @@
 # Test Review Patterns: Other Layers (C#/ASP.NET Core)
 
-C#/FluentAssertions code examples for selenium, email, scheduling, and security test anti-patterns. For universal rules: `.claude/templates/testing/test-review-patterns.md`
+C#/FluentAssertions code examples for selenium, email, scheduling, and security test anti-patterns. For universal rules: `.opencode/templates/testing/test-review-patterns.md`
 
 ## Selenium Anti-Pattern Examples
 
