@@ -51,6 +51,10 @@ Compile all answers into `interview.md` using the format rules from the template
 3. If corrections, update the file
 4. Report the file path and suggest running `/story NN` next
 
+## Design Constraints
+
+- **Language**: English
+
 ## Rules
 
 - NEVER skip the interview — the whole point is interactive knowledge extraction
