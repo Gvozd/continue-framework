@@ -21,8 +21,8 @@ Conduct a structured interview with the user to gather all context needed for a 
 Before asking any questions, silently read:
 
 1. **Story mapping**: `ProductSpecification/stories.md`
-2. **Product description**: `ProductSpecification/BriefProductDescription.txt`
-3. **Expected load**: `ProductSpecification/ExpectedLoad.txt`
+2. **Product description**: `ProductSpecification/BriefProductDescription.md`
+3. **Expected load**: `ProductSpecification/ExpectedLoad.md`
 4. **Existing story spec** (if any): `ProductSpecification/stories/NN-story-name/NN_StoryName.md`
 5. **Archived drafts**: `ProductSpecification/Archived/DraftStories/1st-iteration/` (scan for relevant files)
 6. **Existing interviews**: ALL existing `ProductSpecification/stories/*/interview.md` files

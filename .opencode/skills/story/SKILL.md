@@ -20,9 +20,9 @@ Generate detailed story specifications following the established format, based o
 
 Before generating any specification, read and understand:
 
-1. **Product description**: `ProductSpecification/BriefProductDescription.txt`
+1. **Product description**: `ProductSpecification/BriefProductDescription.md`
 2. **Story mapping**: `ProductSpecification/stories.md`
-3. **Expected load**: `ProductSpecification/ExpectedLoad.txt`
+3. **Expected load**: `ProductSpecification/ExpectedLoad.md`
 4. **Archived drafts**: `ProductSpecification/Archived/DraftStories/1st-iteration/`
 5. **Existing specifications**: `ProductSpecification/stories/*/NN_StoryName.md`
 6. **Story-specific context** (optional): `ProductSpecification/stories/NN-story-name/interview.md`

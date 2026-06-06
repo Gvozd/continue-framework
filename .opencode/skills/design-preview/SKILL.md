@@ -22,7 +22,7 @@ Before writing any test code, present the planned implementation design to the u
 
 1. **Read the story spec** — full story document for business context, requirements, constraints, business rules
 2. **Read the scenario** from `tests/01_API_Tests.md`
-3. **Read `ProductSpecification/ExpectedLoad.txt`** — for scale assumptions (use real numbers, never guess)
+3. **Read `ProductSpecification/ExpectedLoad.md`** — for scale assumptions (use real numbers, never guess)
 4. **Read existing code** — domain entities, usecases, ports, request/response DTOs
 5. **Read ADRs** — check `decisions/*-decision.md` files in the story directory that may constrain the design
 6. **Read the acceptance test** (if `red-acceptance` is done) — understand expected API behavior
