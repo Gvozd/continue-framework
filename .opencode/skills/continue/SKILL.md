@@ -11,12 +11,13 @@ description: Continue working on a story or task by reading progress.md, executi
 2. **Backlog promotion** -- if the story row is in the **Backlog** table in `ProductSpecification/stories.md`, move it to **In Progress** before proceeding
 3. **Read progress** file, bootstrap if missing (stories only)
 4. **Find next step** -- first `[~]` or `[ ]` entry
-5. **Load ADR context** -- check for `decisions/*-decision.md` files in the story directory. If any exist AND the current step references the ADR (via "see ADR" annotation or matching scenario), read it. ADRs contain architectural decisions, schema changes, edge cases, and implementation guidance that the work unit needs.
-6. **Execute one work unit** -- dispatch sub-skills per tables below
-7. **Adapter discovery** -- when the next step is `[ ] adapters-discovery`, read usecase constructor to identify ports and map to adapters (see `workflow.md`). Mark `[x] adapters-discovery`, insert concrete steps below it, commit progress.md.
-8. **Update progress** -- mark completed, advance next, commit
-9. **Update stories.md** -- for stories only, update the phase columns in `ProductSpecification/stories.md` (see below)
-10. **Task completion** -- after updating progress, if ALL checkboxes are `[x]` or `[S]` (no `[ ]` or `[~]` remaining), move the task folder to `ProductSpecification/tasks/done/` and include the move in the commit
+5. **Read journey context** -- read `carryover.md` (story root, if it exists) and the current scenario's summary file (`summaries/{scenario-slug}.md`, if it exists). Treat both as additional context for the work unit -- they preserve predictions, decisions, surprises, and quirks from prior conversations. `/continue` only READS these files; it never writes them (the `/handoff` skill is the sole writer).
+6. **Load ADR context** -- check for `decisions/*-decision.md` files in the story directory. If any exist AND the current step references the ADR (via "see ADR" annotation or matching scenario), read it. ADRs contain architectural decisions, schema changes, edge cases, and implementation guidance that the work unit needs.
+7. **Execute one work unit** -- dispatch sub-skills per tables below
+8. **Adapter discovery** -- when the next step is `[ ] adapters-discovery`, read usecase constructor to identify ports and map to adapters (see `workflow.md`). Mark `[x] adapters-discovery`, insert concrete steps below it, commit progress.md.
+9. **Update progress** -- mark completed, advance next, commit
+10. **Update stories.md** -- for stories only, update the phase columns in `ProductSpecification/stories.md` (see below)
+11. **Task completion** -- after updating progress, if ALL checkboxes are `[x]` or `[S]` (no `[ ]` or `[~]` remaining), move the task folder to `ProductSpecification/tasks/done/` and include the move in the commit
 
 All workflow sequences, progress tracking rules, adapter discovery procedure, and task types are defined in `.opencode/rules/workflow.md`. Progress file format examples are in `.opencode/templates/workflow/progress-format.md`.
 
@@ -47,12 +48,15 @@ Each progress.md checkbox maps to sub-skills. Dispatch per `workflow.md` sequenc
 | `align-design` | Build component → `/align-design` → `/design-review` (MANDATORY) → `/refactor` → `/align-design` verify-only → `/test-coverage frontend --focus` → commit |
 | `demo` | `/demo {scenario_test_class}` then progress-only commit |
 | `refactor usecase` / `refactor (...)` | Apply change then run affected tests then commit |
+| QA `## Cases` checkbox | **No dispatch.** Report the next unchecked case to the user and stop -- the tester verifies it manually against the target environment, then ticks the box (or files a separate bug task if it fails) on their own. |
 
 ## Stop and Report
 
 STOP after every commit. A single `/continue` invocation executes exactly ONE work unit. Within that work unit, don't pause between sub-skills. But once the commit lands, stop immediately and report: completed step, test results (pass/fail counts from every test run in the work unit), next step, progress fraction, how to continue. Do NOT read the next `[ ]` step and keep going.
 
 **Test results:** Collect pass/fail counts from every sub-skill that runs tests (red-agent, green-agent, test-coverage, refactor). Include them in the final report as a summary line, e.g., `Tests: 15 passed, 0 failed` or `Tests: 14 passed, 1 failed`. When multiple test suites ran, report each separately.
+
+**Red prediction (mandatory for red-* work units):** When the work unit included any red-* phase, copy the red-agent's **Predicted failure**, **Actual failure**, and **Comparison** sections verbatim into the final report — same wording as the Output Summary Format in `.opencode/templates/workflow/red-phase-formats.md`. Do NOT collapse to phrases like "test passed as predicted" or "prediction matched" — the user must see both the prediction and the actual result side by side, in their own labelled sections, so the match can be audited without re-reading the agent's return.
 
 ## Pre-Commit Checklist
 
